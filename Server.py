@@ -7,15 +7,17 @@
 # @Email: fjkl@vip.qq.com
 # @Software: PyCharm
 
+import time
 from _collections import OrderedDict
+from collections import OrderedDict
+
+import cv2
+import numpy as np
 # 导入Flask类
 from flask import Flask, request, jsonify
-from json_utils import jsonify
-import numpy as np
-import cv2
-import time
-from collections import OrderedDict
+
 from Recognition import PlateRecognition
+from json_utils import jsonify
 
 # 实例化
 app = Flask(__name__)
@@ -63,4 +65,3 @@ if __name__ == '__main__':
     # 部署到服务器
     # from waitress import serve
     # serve(app, host=' IP  ', port=5000)
-

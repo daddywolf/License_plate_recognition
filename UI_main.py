@@ -7,14 +7,18 @@
 # WARNING! All changes made in this file will be lost!
 
 
-from PyQt5 import QtCore,QtGui, QtWidgets
-from PyQt5.QtGui import *
-from PyQt5.QtCore import Qt
-from PyQt5.QtWidgets import *
-from Recognition import PlateRecognition
+import os
+import sys
+import xlwt
+
 import cv2
-import sys, os, xlwt
 import numpy as np
+from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5.QtCore import Qt
+from PyQt5.QtGui import *
+from PyQt5.QtWidgets import *
+
+from Recognition import PlateRecognition
 
 
 class Ui_MainWindow(object):
